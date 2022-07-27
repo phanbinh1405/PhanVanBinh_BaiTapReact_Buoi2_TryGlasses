@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import TryGlassesApp from './Components/TryGlassesApp/TryGlassesApp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div
+      className='App'
+      style={{
+        background: 'url(./image/background.jpg)',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100vh',
+      }}
+    >
+      <header className='app-header text-white text-center py-5'>
+        <p className='mb-0 fs-4'>TRY GLASSES APP ONLINE</p>
       </header>
+      <TryGlassesApp />
     </div>
   );
 }
